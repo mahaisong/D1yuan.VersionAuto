@@ -21,7 +21,7 @@
   },
   "libraries": {
     "D1yuan.VersionAuto/1.0.0": {
-      "sha512": "+Mfzl7BC7GIvC9bpPrHQ9GGWrMC4uUd02A29SHj6UAZSNtlvLr7YCNN6Vq78XnXd9kIi1jD1Ui2GBnirPJ6CAA==",
+      "sha512": "wOSNHviyNoiXMjohCwk0qOkHHq7M8iWJRZ5tAvOaxCOoKJH1+2pZ1pI6OEeiwxAEleAlW9bAri1phKPXf/l/oA==",
       "type": "package",
       "path": "d1yuan.versionauto/1.0.0",
       "files": [

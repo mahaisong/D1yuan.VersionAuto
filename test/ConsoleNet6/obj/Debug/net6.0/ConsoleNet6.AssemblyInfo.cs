@@ -13,7 +13,7 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConsoleNet6")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.0.2")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.0.5")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConsoleNet6")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConsoleNet6")]

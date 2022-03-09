@@ -1,6 +1,6 @@
 ﻿作者：mahaisong D1yuan
 功能说明：项目build生成后，查看dll的属性下的版本号。
-git地址：D1yuan.VersionAuto
+git地址：D1yuan.VersionAuto  https://github.com/mahaisong/D1yuan.VersionAuto
 支持：netstandard2.1; net4.6+; netcore+; net6+;
 
 ————

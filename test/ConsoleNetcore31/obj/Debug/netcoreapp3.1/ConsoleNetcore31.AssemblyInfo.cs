@@ -13,7 +13,7 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConsoleNetcore31")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.0.6")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.0.7")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConsoleNetcore31")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConsoleNetcore31")]
