@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>D1yuan.VersionAuto</id>
+    <version>1.0.0</version>
+    <authors>mahaisong D1yuan</authors>
+    <developmentDependency>true</developmentDependency>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\private\MyGitHub\D1yuan.VersionAuto\src\bin\Debug\netstandard2.1\D1yuan.VersionAuto.dll" target="lib\netstandard2.1\D1yuan.VersionAuto.dll" />
+    <file src="D:\private\MyGitHub\D1yuan.VersionAuto\src\Assets\build\D1yuan.VersionAuto.targets" target="build\D1yuan.VersionAuto.targets" />
+    <file src="D:\private\MyGitHub\D1yuan.VersionAuto\src\Assets\buildMultiTargeting\D1yuan.VersionAuto.targets" target="buildMultiTargeting\D1yuan.VersionAuto.targets" />
+    <file src="D:\private\MyGitHub\D1yuan.VersionAuto\src\Assets\readme.txt" target="readme.txt" />
+  </files>
+</package>

@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1</TargetFrameworks>
+    <Nullable>enable</Nullable>
+	  <!--NuGet包的本质是一个以nupkg为后缀的zip压缩文件(你可以将后缀改为.zip后解压查看里面的内容),其中包含了编译后的Dll文件以及其他相关文件-->
+	  <!--由于我们是一个 NuGet 工具，不需要被其他项目直接依赖，所以此项目的依赖包不应该传递到下一个项目中。所以请将所有的 NuGet 包资产都声明成私有的，-->
+
+	  <Version>1.0.0</Version>
+	  <AssemblyName>D1yuan.VersionAuto</AssemblyName>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	  <!-- ↓ 新增的属性 -->
+	  <!--
+		<BuildOutputTargetFolder>tasks</BuildOutputTargetFolder>-->
+
+	  <!--于我们没有 lib 文件夹，所以 NuGet 会给出警告，NoPackageAnalysis 将阻止这个警告。
+		DevelopmentDependency 是为了说明这是一个开发依赖，设置为 true 将阻止包作为依赖传递给下一个项目。-->
+	  <!-- ↓ 新增的属性 -->
+	  <NoPackageAnalysis>true</NoPackageAnalysis>
+	  <!-- ↓ 新增的属性 -->
+	  <DevelopmentDependency>true</DevelopmentDependency>
+	  <Authors>mahaisong D1yuan</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Build.Framework" Version="17.0.0" />
+    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="17.0.0" />
+	  <PackageReference Update="@(PackageReference)" PrivateAssets="All" />
+  </ItemGroup>
+
+	<!-- 在生成 NuGet 包之前，我们需要将我们项目中的文件夹结构一一映射到 NuGet 包中。-->
+	<Target Name="IncludeAllDependencies" BeforeTargets="_GetPackageFiles">
+		<ItemGroup>
+			<!--None 表示这一项要显示到 Visual Studio 解决方案中（其实对于不认识的文件，None 就是默认值）；Include 表示相对于项目文件的路径（支持通配符）；
+		Pack 表示这一项要打包到 NuGet；PackagePath 表示这一项打包到 NuGet 中的路径-->
+			<!-- ↓ 新增的三项 -->
+			<!--build\$(PackageId).targets-->
+			<None Include="Assets\build\**" Pack="True" PackagePath="build\" />
+			<None Include="Assets\buildMultiTargeting\**" Pack="True" PackagePath="buildMultiTargeting\" />
+			<None Include="Assets\readme.txt" Pack="True" PackagePath="" />
+		</ItemGroup>
+	</Target>
+
+</Project>

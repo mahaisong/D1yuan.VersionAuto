@@ -1,0 +1,16 @@
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNet6\bin\Debug\net6.0\ConsoleNet6.exe
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNet6\bin\Debug\net6.0\ConsoleNet6.deps.json
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNet6\bin\Debug\net6.0\ConsoleNet6.runtimeconfig.json
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNet6\bin\Debug\net6.0\ConsoleNet6.dll
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNet6\bin\Debug\net6.0\ref\ConsoleNet6.dll
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNet6\bin\Debug\net6.0\ConsoleNet6.pdb
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNet6\obj\Debug\net6.0\ConsoleNet6.GeneratedMSBuildEditorConfig.editorconfig
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNet6\obj\Debug\net6.0\ConsoleNet6.AssemblyInfoInputs.cache
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNet6\obj\Debug\net6.0\ConsoleNet6.AssemblyInfo.cs
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNet6\obj\Debug\net6.0\ConsoleNet6.csproj.CoreCompileInputs.cache
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNet6\obj\Debug\net6.0\ConsoleNet6.dll
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNet6\obj\Debug\net6.0\ref\ConsoleNet6.dll
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNet6\obj\Debug\net6.0\ConsoleNet6.pdb
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNet6\obj\Debug\net6.0\ConsoleNet6.genruntimeconfig.cache
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNet6\bin\Debug\net6.0\D1yuan.VersionAuto.dll
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNet6\obj\Debug\net6.0\ConsoleNet6.csproj.CopyComplete

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jk4kj5D6UtRAhjxhlNHMWXk7wcXTgPdoi6OsWK3/ft7AI5NE3boC7O3akxCfned/bapQkGyw0OwNq+VVh8BWPg==",
+  "success": true,
+  "projectFilePath": "D:\\private\\MyGitHub\\D1yuan.VersionAuto\\test\\ConsoleNetcore31\\ConsoleNetcore31.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mahaisong\\.nuget\\packages\\d1yuan.versionauto\\1.0.0\\d1yuan.versionauto.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

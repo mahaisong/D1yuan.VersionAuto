@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "4b4575eb-3830-4516-95bf-50c825e0c0cb": {
+      "ProjectGuid": "4b4575eb-3830-4516-95bf-50c825e0c0cb",
+      "DisplayName": "ConsoleNetcore31",
+      "ColorIndex": 0
+    },
+    "69bed4f4-c475-41a3-9881-3929275430e5": {
+      "ProjectGuid": "69bed4f4-c475-41a3-9881-3929275430e5",
+      "DisplayName": "ConsoleNet6",
+      "ColorIndex": 1
+    },
+    "86170b57-accf-44ed-a699-3e32b2454b39": {
+      "ProjectGuid": "86170b57-accf-44ed-a699-3e32b2454b39",
+      "DisplayName": "ConsoleNetcore31",
+      "ColorIndex": 2
+    },
+    "55a295a2-8544-4f62-9a47-043a5deb2e68": {
+      "ProjectGuid": "55a295a2-8544-4f62-9a47-043a5deb2e68",
+      "DisplayName": "ConsoleNet6",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "杂项文件",
+      "ColorIndex": -1
+    },
+    "684d63f9-2558-41a0-b21c-35f9f52d6caf": {
+      "ProjectGuid": "684d63f9-2558-41a0-b21c-35f9f52d6caf",
+      "DisplayName": "D1yuan.VersionAuto",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

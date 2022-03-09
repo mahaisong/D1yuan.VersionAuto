@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ConsoleNet6/0.0.0": {
+        "dependencies": {
+          "D1yuan.VersionAuto": "1.0.0"
+        },
+        "runtime": {
+          "ConsoleNet6.dll": {}
+        }
+      },
+      "D1yuan.VersionAuto/1.0.0": {
+        "runtime": {
+          "lib/netstandard2.1/D1yuan.VersionAuto.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ConsoleNet6/0.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "D1yuan.VersionAuto/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+Mfzl7BC7GIvC9bpPrHQ9GGWrMC4uUd02A29SHj6UAZSNtlvLr7YCNN6Vq78XnXd9kIi1jD1Ui2GBnirPJ6CAA==",
+      "path": "d1yuan.versionauto/1.0.0",
+      "hashPath": "d1yuan.versionauto.1.0.0.nupkg.sha512"
+    }
+  }
+}

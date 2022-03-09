@@ -1,0 +1,15 @@
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNetcore31\bin\Debug\netcoreapp3.1\ConsoleNetcore31.exe
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNetcore31\bin\Debug\netcoreapp3.1\ConsoleNetcore31.deps.json
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNetcore31\bin\Debug\netcoreapp3.1\ConsoleNetcore31.runtimeconfig.json
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNetcore31\bin\Debug\netcoreapp3.1\ConsoleNetcore31.runtimeconfig.dev.json
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNetcore31\bin\Debug\netcoreapp3.1\ConsoleNetcore31.dll
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNetcore31\bin\Debug\netcoreapp3.1\ConsoleNetcore31.pdb
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNetcore31\bin\Debug\netcoreapp3.1\D1yuan.VersionAuto.dll
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNetcore31\obj\Debug\netcoreapp3.1\ConsoleNetcore31.GeneratedMSBuildEditorConfig.editorconfig
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNetcore31\obj\Debug\netcoreapp3.1\ConsoleNetcore31.AssemblyInfoInputs.cache
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNetcore31\obj\Debug\netcoreapp3.1\ConsoleNetcore31.AssemblyInfo.cs
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNetcore31\obj\Debug\netcoreapp3.1\ConsoleNetcore31.csproj.CoreCompileInputs.cache
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNetcore31\obj\Debug\netcoreapp3.1\ConsoleNetcore31.csproj.CopyComplete
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNetcore31\obj\Debug\netcoreapp3.1\ConsoleNetcore31.dll
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNetcore31\obj\Debug\netcoreapp3.1\ConsoleNetcore31.pdb
+D:\private\MyGitHub\D1yuan.VersionAuto\test\ConsoleNetcore31\obj\Debug\netcoreapp3.1\ConsoleNetcore31.genruntimeconfig.cache

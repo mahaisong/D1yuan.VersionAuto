@@ -1,0 +1,5 @@
+﻿<Project>
+	<!-- 直接 Import 我们在 build 中写的那个 targets 文件。
+       NuGet 留下了为多框架项目提供特殊扩展的方案，其实有时候也是很有用的。-->
+	<Import Project="$(MSBuildThisFileDirectory)\..\buildMultiTargeting\D1yuan.VersionAuto.targets" />
+</Project>

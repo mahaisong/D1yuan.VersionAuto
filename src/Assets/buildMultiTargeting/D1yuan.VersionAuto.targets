@@ -1,0 +1,95 @@
+﻿
+<Project ToolsVersion="4.0" InitialTargets="_TargetLoadVerFile" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<!--0.加载文件记录版本号 或初始的版本号-->
+	<PropertyGroup>
+		<_VerNumFile>$(MSBuildProjectDirectory)\verNum.txt</_VerNumFile>
+		<_BuildNumFile>$(MSBuildProjectDirectory)\buildNum.txt</_BuildNumFile>
+	</PropertyGroup>
+
+
+	<!--1中使用的task方法-->
+	<UsingTask TaskName="_TaskLoadVerFile" TaskFactory="RoslynCodeTaskFactory"
+			   AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+		<ParameterGroup>
+			<VerNumFileName ParameterType="System.String" Required="True" />
+			<BuildNumFile ParameterType="System.String" Required="True" />
+
+			<VerNum ParameterType="System.String" Output="True"/>
+			<BuildNum ParameterType="System.Int32" Output="True"/>
+		</ParameterGroup>
+		<Task>
+			<!--具体代码————roslyn文本嵌入代码写法 -->
+			<Using Namespace="System" />
+			<Using Namespace="System.IO" />
+			<Code Type="Fragment" Language="cs">
+				<![CDATA[
+				if(!File.Exists(VerNumFileName)){
+					File.WriteAllText(VerNumFileName,"0.0.0");
+				}
+				if(!File.Exists(BuildNumFile)){
+					File.WriteAllText(BuildNumFile,"0");
+				}
+				VerNum=File.ReadAllText(VerNumFileName);
+				BuildNum=System.Int32.Parse(File.ReadAllText(BuildNumFile));
+            ]]>
+			</Code>
+
+		</Task>
+	</UsingTask>
+
+
+	<!--结果写回文件（版本数加1）-->
+
+	<UsingTask TaskName="_TaskSaveVerFile" TaskFactory="RoslynCodeTaskFactory"
+			   AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+		<ParameterGroup>
+			<_VerNumFile ParameterType="System.String" Required="True" />
+			<_BuildNumFile ParameterType="System.String" Required="True" />
+
+			<VerNum ParameterType="System.String" Required="True"/>
+			<BuildNum ParameterType="System.Int32" Required="True"/>
+		</ParameterGroup>
+		<Task>
+			<Using Namespace="System" />
+			<Using Namespace="System.IO" />
+			<Code Type="Fragment" Language="cs">
+				<![CDATA[
+                File.WriteAllText(_VerNumFile,VerNum);
+				File.WriteAllText(_BuildNumFile,(BuildNum+1).ToString());
+            ]]>
+			</Code>
+		</Task>
+	</UsingTask>
+
+
+	<!--1.初始加载两个文件路径、使用task，给两个参数赋值-->
+	<Target Name="_TargetLoadVerFile">
+		<_TaskLoadVerFile VerNumFileName="$(_VerNumFile)"
+					  BuildNumFile="$(_BuildNumFile)">
+			<Output PropertyName="ParamVerNum" TaskParameter="VerNum" />
+			<Output PropertyName="ParamBuildNum" TaskParameter="BuildNum" />
+		</_TaskLoadVerFile>
+		<Message Text="版本号文件已加载." Importance="high"/>
+	</Target>
+	
+	<!--2. 将文件中的当前版本号，写入到生成的dll里面  -->
+	<Target Name="_TargetUpdateVersion" AfterTargets="_TargetLoadVerFile">
+		<PropertyGroup>
+			<Version>$(ParamVerNum)</Version>
+			<FileVersion>$(ParamVerNum).$(ParamBuildNum)</FileVersion>
+		</PropertyGroup>
+		<Message Text="生成dll版本号为:$(ParamVerNum).$(ParamBuildNum)" Importance="high" />
+	</Target>
+
+	<!--3. 生成之后，版本号写回到文件中，生成次数+1  -->
+
+	<Target Name="_TargetSaveVerFile" AfterTargets="Build">
+		<_TaskSaveVerFile _VerNumFile="$(_VerNumFile)"
+					  _BuildNumFile="$(_BuildNumFile)"
+		VerNum="$(ParamVerNum)"
+		BuildNum="$(ParamBuildNum)"/>
+		<Message Text="版本号增加1，并保存更新了文件." Importance="high"/>
+	</Target>
+	
+
+</Project>
